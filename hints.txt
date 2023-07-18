@@ -1,0 +1,13 @@
+if there are multuiple possible way to bring ans then try to reduce the multiple numbers into one or 2 variables eg(I hate 111)
+
+if there is a operation told try to bring a conclution from it that that actually is the opeartion doing 
+
+n/(lcm(a,b,c...) ===> number of terms that are divisible by a,b,c..... out of first n terms 
+
+even odd thought 
+
+XOR thought
+
+modulo thought 
+
+see the series 
