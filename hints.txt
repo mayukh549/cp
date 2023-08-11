@@ -11,3 +11,24 @@ XOR thought
 modulo thought 
 
 see the series 
+
+series that has sum of 2 numbers or fibo nacci series is like a series of 2 4 8 16 32 64 ....
+
+the product of any n consecutive number is always divisible by n! 
+
+precompute 2*10^5;
+
+
+binary search when cannot understand anything use it or when some thing like the max value needs to be calcuated
+
+
+use the const in the problem like sum of array const ,product of 2 elements const gcd cond lcm const .
+
+
+left iteration right iteration ...
+
+adjacent 2 odd numbers are coprime
+
+next_permutation ------- prev_permutation
+
+check % and / sign 

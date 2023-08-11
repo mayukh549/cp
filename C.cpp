@@ -13,7 +13,7 @@ typedef vector<pair<ll,ll>> vpll;
 #define vin(v) int n; cin>>n;vector<int>v; for(int i=0;i<n;i++){int x; cin>>x; v.push_back(x);}  
 #define ain(a) int n; cin>>n; ll a[]; for(int i=0;i<n;i++){cin>>a[i];}
 #define vout(v) for(auto &e:v){cout<<e<<" ";} cout<<endl;
-#define mout(mp) for(auto &e:mp){cout<<e.first<<" "<<e.second;} cout<<endl;
+#define mout(mp) for(auto &e:mp){cout<<e.first<<" "<<e.second<<endl;} cout<<endl;
 #define mvout(mp) for(auto &e:mp){cout<<e.first<<endl; for(long long i =0 ; i<(e.second).size();i++){cout<<(v.second)[i]<<" ";} cout<<endl;} cout<<endl;
 #define Sort(a) sort(a.begin(),a.end())
 #define Sorta(a,n) sort(a,a+n)
@@ -125,6 +125,85 @@ int subset_ct = 1<<n; ---------->length to subset of set nums
 // (char)('a'+1)----->b
 
 void solve(){
+    ll n;
+    cin>>n;
+    map<ll,ll>mp;
+    vll v;
+    ll sum = 0;
+    vll v1;
+
+
+    fr(i,n,0){
+        ll inpt ;
+        cin>>inpt;
+        v1.pb(inpt);
+        mp[inpt]++;
+        if(mp[inpt]==1){
+            v.pb(inpt);
+        }
+        sum++;
+
+    }
+    if(mp.size()==1){
+        for(auto &e :v1){
+        cout<<n<<" ";
+    }
+    cout<<"\n";
+    return;
+
+    }
+    ll sum2 =sum;
+    //cout<<mp.size()<<endl;
+    
+    Sort(v);
+    sum-=mp[v[0]];
+    ll a[mp.size()]={0};
+    ll b[mp.size()]={0};
+    auto t = mp.begin();
+    fr(i,mp.size(),1){
+        ll s1 = abs(v[i]-v[i-1]);
+        ll s2 = sum;
+        a[i]=s1*sum;
+        sum-=mp[v[i]];
+        //cout<<mp[v[i]]<<endl;
+        
+        a[i]+=a[i-1];
+        //vout(a);
+
+
+
+
+    }
+    //mout(mp);
+
+    //cout<<"j"<<endl;
+    sum2-=mp[v[v.size()-1]];
+    //mout(mp);
+    //cout<<mp.size()<<endl;
+    ufr(i,mp.size()-1,0){
+        //cout<<i<<endl;
+        ll s1 = abs(v[i]-v[i+1]);
+        ll s2 = sum2;
+        b[i]=s1*sum2;
+        sum2-=mp[v[i]];
+        
+        b[i]+=b[i+1];
+        //vout(b);
+
+    }
+    map<ll,ll>mp1;
+    fr(i,v.size(),0){
+        mp1[v[i]]=n+a[v.size()-1]-a[i]+b[0]-b[i];
+        //cout<<v[i]<<" "<<n+a[v.size()-1]-a[i]+b[0]-b[i]<<endl;
+
+    }
+    for(auto &e :v1){
+        cout<<mp1[e]<<" ";
+    }
+    cout<<"\n";
+    
+        
+
 
     
 
