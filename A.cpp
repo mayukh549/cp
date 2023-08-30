@@ -127,23 +127,85 @@ int subset_ct = 1<<n; ---------->length to subset of set nums
 void solve(){
     ll n;
     cin>>n;
-    ll a[n];
-    fr(i,n,0){
-        cin>>a[i];
+    
+    vll a;
+    ll counter =0 ;
+    if(n<=2){
+        ll s1;
+        ll s2;
+        cin>>s1>>s2;
+
+        cout<<max((s1+s2)%M,(s1*s2)%M)<<endl;
+        return;
     }
-    ll maxi =0;
-    ll counter = 0;
-    ufr(i,n-1,0){
-        if(a[i]>a[i+1]){
-            maxi=max(maxi,a[i]);
 
-
-
+    fr(i,n,0){
+        ll s1;
+        cin>>s1;
+        if(s1==1){
+            counter++;
+        }else{
+            a.pb(s1);
         }
 
+
+
+    }
+
+
+    fr(i,counter/3,0){
+        a.pb(3);
+        //cout<<counter;
+        
+
+
+    }
+    //cout<<counter%3<<endl;
+
+
+    Sort(a);
+
+    ll s1 =1;
+
+    ll s5 = 1;
+    //vout(a);
+    fr(i,a.size(),0){
+                s5=((s5%M)*(a[i]%M))%M;
+        s5=s5%M;
+
+    }
+    //cout<<s5;
+    s5=((s5%M)*((counter%3)%M))%M;;
+    s5=s5%M;
+    //cout<<s5<<endl;
+    
+    if(counter%3==1){
+
+   
+       
+            a[0]=(a[0]%M+1)%M;
+            a[0]%=M;
+            counter--;
+            //Sort(a);
+            //vout(a);
+
+
+        
     }
     //vout(a);
-    cout<<maxi<<"\n";
+
+
+    
+    fr(i,a.size(),0){
+        s1=((s1%M)*(a[i]%M))%M;
+        s1=s1%M;
+        //cout<<M<<endl;
+
+
+    }
+    //cout<<s1<<endl;
+
+    cout<<max(s1,s5)<<endl;
 
     
 

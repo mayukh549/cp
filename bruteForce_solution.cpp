@@ -13,7 +13,7 @@ typedef vector<pair<ll,ll>> vpll;
 #define vin(v) int n; cin>>n;vector<int>v; for(int i=0;i<n;i++){int x; cin>>x; v.push_back(x);}  
 #define ain(a) int n; cin>>n; ll a[]; for(int i=0;i<n;i++){cin>>a[i];}
 #define vout(v) for(auto &e:v){cout<<e<<" ";} cout<<endl;
-#define mout(mp) for(auto &e:mp){cout<<e.first<<" "<<e.second;} cout<<endl;
+#define mout(mp) for(auto &e:mp){cout<<e.first<<" "<<e.second<<endl;} cout<<endl;
 #define mvout(mp) for(auto &e:mp){cout<<e.first<<endl; for(long long i =0 ; i<(e.second).size();i++){cout<<(v.second)[i]<<" ";} cout<<endl;} cout<<endl;
 #define Sort(a) sort(a.begin(),a.end())
 #define Sorta(a,n) sort(a,a+n)
@@ -125,6 +125,20 @@ int subset_ct = 1<<n; ---------->length to subset of set nums
 // (char)('a'+1)----->b
 
 void solve(){
+    ll n,m;
+    cin>>n>>m;
+    map<ll,ll>mp;
+    fr(i,m+1,0){
+        mp[n^i]++;
+
+    }
+    //mout(mp);
+    fr(i,m+2,0){
+        if(mp[i]==0){
+            cout<<i<<endl;
+            return;
+        }
+    }
 
     
 

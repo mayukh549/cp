@@ -14,7 +14,7 @@ typedef vector<pair<ll,ll>> vpll;
 #define ain(a) int n; cin>>n; ll a[]; for(int i=0;i<n;i++){cin>>a[i];}
 #define vout(v) for(auto &e:v){cout<<e<<" ";} cout<<endl;
 #define mout(mp) for(auto &e:mp){cout<<e.first<<" "<<e.second;} cout<<endl;
-#define mvout(mp) for(auto &e:mp){cout<<e.first<<endl; for(long long i =0 ; i<(e.second).size();i++){cout<<(e.second)[i]<<" ";} cout<<endl;} cout<<endl;
+#define mvout(mp) for(auto &e:mp){cout<<e.first<<endl; for(long long i =0 ; i<(e.second).size();i++){cout<<(v.second)[i]<<" ";} cout<<endl;} cout<<endl;
 #define Sort(a) sort(a.begin(),a.end())
 #define Sorta(a,n) sort(a,a+n)
 #define pb push_back 
@@ -123,130 +123,42 @@ int n = nums.size();
 int subset_ct = 1<<n; ---------->length to subset of set nums
 */
 // (char)('a'+1)----->b
+//ll even_ct[N];
+//vll v;
+vll g[1000000];
+
+ll subtree_sum[1000000];
+void dfs(int vertex ,int p=0){
+
+    subtree_sum[vertex]++;
+
+
+    for(int child : g[vertex]){
+        if(child==p){
+            continue;
+        }
+        dfs(child,vertex);
+        subtree_sum[vertex]+=subtree_sum[child];
+        
+
+    }
+}
 
 void solve(){
+    
     ll n;
-    string s ;
-    ll q ;
-    cin>>n>>s>>q;
-    ll m = power(2,n);
-    ll mans =m-1;
-    m/=2;
-    vll v1;
-    map<ll,vll>mp;
-    while(m>0){
-        v1.pb(m);
-        m/=2;
-
-
+    cin>>n;
+    //ll g[n+2]={0};
+    fr(i,n-1,0){
+        ll x;
+        cin>>x;
+        g[x].pb(i+2);
+        cout<<i+2<<" "<<x<<endl;
     }
-    ll counter = 0;
-    ll counter2 =0;
+    //vout(g);
 
-    //vout(v1);
-    mans--;
-    for(auto &e:v1){
-        counter2 = counter;
-        fr(i,e,0){
-
-            if(mp[counter].size()==0){
-                //cout<<counter<<endl;
-
-                mp[counter].pb(1);
-                mp[counter].pb(1);
-                mp[counter].pb(counter2+e);
-                if(s[counter]=='?'){
-                    mp[counter2+e].pb(2);
-
-                }else{
-                     mp[counter2+e].pb(1);
-                }
-                counter++;
-                mp[counter].pb(1);
-                mp[counter].pb(1);
-                mp[counter].pb(counter2+e);
-                if(s[counter]=='?'){
-                    mp[counter2+e].pb(2);
-                    
-                }else{
-                     mp[counter2+e].pb(1);
-                }
-                i++;
-                counter++;
-                counter2++;
-            }else{
-                //cout<<counter<<"--->"<<mp[counter].size()<<counter2<<endl;
-                mp[counter].pb(counter2+e);
-                if(s[counter]=='?'){
-                    mp[counter2+e].pb((mp[counter])[0]+(mp[counter])[1]);
-
-                }else{
-                     mp[counter2+e].pb((mp[counter])[s[counter]-'0']);
-                }
-                counter++;
-                if(e==1) break;
-
-                mp[counter].pb(counter2+e);
-                if(s[counter]=='?'){
-                    mp[counter2+e].pb((mp[counter])[0]+(mp[counter])[1]);
-
-                }else{
-                     mp[counter2+e].pb((mp[counter])[s[counter]-'0']);
-                }
-                i++;
-                counter++;
-                counter2++;
-
-            }
-
-        }
-    }
-    //mvout(mp);
-    //cout<<q<<"l:"<<endl;
-
-    while(q--){
-        //cout<<"l"<<endl;
-        ll n1;
-        char s1;
-        cin>>n1>>s1;
-        s[n1-1]=s1;
-        n1--;
-        ll counter3 =0;
-        //cout<<n1;
-        while(n1<mans){
-            if(counter3 >100000000000){
-                cout<<"h";
-                break;
-            }
-            
-            ll s3 = (mp[n1])[2];
-            //cout<<n1<<" "<<s3<<endl;
-            if(s[n1]=='?'){
-                (mp[s3])[(n1)%2]=(mp[n1])[0]+(mp[n1])[1];
-                
-
-
-                
-
-            }else{
-                     (mp[s3])[(n1)%2]=((mp[n1])[s[n1]-'0']);
-                }
-            n1=s3;
-            counter3++;
-
-        }
-        //mvout(mp);
-        //cout<<"---->"<<endl;
-        if(s[mans]=='?'){
-            cout<<(mp[mans])[0]+(mp[mans])[1]<<"\n";
-        }else{
-            cout<<((mp[mans])[s[mans]-'0'])<<"\n";
-
-        }
-        //cout<<s<<endl;
-
-
-    }
+    dfs(1);
+    vout(subtree_sum);
 
 
     
@@ -256,7 +168,7 @@ int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     int t=1;
-    //cin>>t;
+    cin>>t;
     while(t--){
         solve();
     }

@@ -32,3 +32,9 @@ adjacent 2 odd numbers are coprime
 next_permutation ------- prev_permutation
 
 check % and / sign 
+
+minimize one term and check the next terms
+
+sort one array and take all possible sum of other array using next permutation until n!
+
+base 9 representation of the digit for mising digits

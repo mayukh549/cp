@@ -35,15 +35,18 @@ int countdigits(ll x){
     return c;
 }
 
-ll power(ll a,ll b){
-    ll ans = 1;
-    for(ll i = 0 ; i<b;i++){
-        ans*=a;
-        ans = ans%(1000000000+7);
-
+ll power(ll x, ll n)
+{
+    ll result = 1;
+    while (n > 0) {
+        if (n & 1 == 1) // y is odd
+        {
+            result = result * x;
+        }
+        x = x * x;
+        n = n >> 1; // y=y/2;
     }
-    return ans;
-
+    return result;
 }
 ll binarysearch(ll a[],ll x,ll n){
     ll s=0;
@@ -125,6 +128,97 @@ int subset_ct = 1<<n; ---------->length to subset of set nums
 // (char)('a'+1)----->b
 
 void solve(){
+    ll n;
+    ll m;
+    cin>>n>>m;
+    m++;
+    // cout<<n<<m<<endl;
+    //     fr(i,39216,0){
+    //     cout<<i<<" "<<(n^i)<<endl;
+    //     if((i+1)%32768==0){
+
+    //         cout<<"--"<<endl;;
+    //     }
+
+    // }
+
+    ll a[30]={0};
+    ll b[30]={0};
+    ll counter =29;
+    ll n1 = n;
+    fr(i,30,0){
+        b[counter]=n1%2;
+        n1/=2;
+        counter--;
+
+    }
+    //vout(b);
+    //cout<<power(2,1)<<endl;
+    ll s31 =0;
+    while(power(2,s31)<=n){
+        //cout<<"k"<<endl;
+        //cout<<s31<<endl;
+        s31++;
+
+    }
+    if(n>m){
+        //cout<<"k"<<endl;
+        cout<<0<<endl;
+        return;
+    }
+    s31=power(2,s31);
+    //cout<<s31<<endl;
+    ll s1 = m/s31;
+    ll s2 = m%s31;
+    //cout<<s2<<endl;
+    if(s2<n+1 && s1>0){
+        //cout<<"l"<<endl;
+        cout<<s31*s1<<endl;
+        //return;
+    }else{
+        ll n5 =n;
+        n=s2;
+        counter =29;
+        n1 = n;
+
+    fr(i,30,0){
+        a[counter]=n1%2;
+        n1/=2;
+        counter--;
+
+    }
+    // vout(a);
+    // vout(b);
+    ll c1= 0;
+    fr(i,30,0){
+        if(b[i]==1&&a[i]==0){
+            a[i]=1;
+            c1++;
+            //break;
+        }
+        if((b[i]==0&&a[i]==1 && c1>0)){
+            a[i]=0;
+        }
+
+    }
+    //vout(a);
+    ll s9 =1;
+    ll ans =0;
+    counter = 29;
+    ufr(i,30,0){
+        ans+=(a[counter]*s9);
+        s9*=2;
+        counter--;
+
+    }
+    cout<<s31*(s1)+(n5^ans)<<endl;
+
+
+
+    }
+
+    //cout<<endl;
+
 
     
 

@@ -21,3 +21,5 @@ void dijkstra(ll source){
 		}
 	}
 }
+//vector<pair<ll,ll>>g[N];
+//g[v[0]].pb({v[1],v[0]});
