@@ -22,7 +22,7 @@ precompute 2*10^5;
 binary search when cannot understand anything use it or when some thing like the max value needs to be calcuated
 
 
-use the const in the problem like sum of array const ,product of 2 elements const gcd cond lcm const .
+use the const in the problem like the sum of array const , product of 2 elements const gcd cond lcm const.
 
 
 left iteration right iteration ...
@@ -35,6 +35,11 @@ check % and / sign
 
 minimize one term and check the next terms
 
-sort one array and take all possible sum of other array using next permutation until n!
+sort one array and take all possible sum of other arrays using the next permutation until n!
 
-base 9 representation of the digit for mising digits
+base 9 representation of the digit for missing digits
+
+always try to check the sum of 2the broken parts by a formula example Split and ADD (cc)
+
+in reversing question of query check the final answer and also check if common parts can be removed by +1 -1 concept or binary search on bits 
+
