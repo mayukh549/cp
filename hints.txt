@@ -41,5 +41,8 @@ base 9 representation of the digit for missing digits
 
 always try to check the sum of 2the broken parts by a formula example Split and ADD (cc)
 
-in reversing question of query check the final answer and also check if common parts can be removed by +1 -1 concept or binary search on bits 
+in reversing the question of the query check the final answer and also check if common parts can be removed by +1 -1 concept or binary search on bits 
+
+when the power questions are given try n=1 and n>=2 as in n=1 sometimes median gives the best possible ans and n>=2 average gives the best possible ans
+when 3 parameters are given think in terms of parameters eg project starting date ending date
 
