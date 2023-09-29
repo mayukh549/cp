@@ -46,3 +46,4 @@ in reversing the question of the query check the final answer and also check if 
 when the power questions are given try n=1 and n>=2 as in n=1 sometimes median gives the best possible ans and n>=2 average gives the best possible ans
 when 3 parameters are given think in terms of parameters eg project starting date ending date
 
+minimum maximum taking out trick in query question break the entire array in pawers of 2 then it will we easy to ans the question  
