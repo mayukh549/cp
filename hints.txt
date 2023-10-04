@@ -49,3 +49,5 @@ when 3 parameters are given think in terms of parameters eg project starting dat
 minimum maximum taking out trick in query question break the entire array in pawers of 2 then it will we easy to ans the question  
 
 when ever taking remainder if ithas some increment thing carefully (eg C. Jellyfish and Green Apple);
+
+deriving the final answer from the question (bit break individually independently ) 
