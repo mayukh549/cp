@@ -47,3 +47,5 @@ when the power questions are given try n=1 and n>=2 as in n=1 sometimes median g
 when 3 parameters are given think in terms of parameters eg project starting date ending date
 
 minimum maximum taking out trick in query question break the entire array in pawers of 2 then it will we easy to ans the question  
+
+when ever taking remainder if ithas some increment thing carefully (eg C. Jellyfish and Green Apple);
