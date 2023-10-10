@@ -51,3 +51,8 @@ minimum maximum taking out trick in query question break the entire array in paw
 when ever taking remainder if ithas some increment thing carefully (eg C. Jellyfish and Green Apple);
 
 deriving the final answer from the question (bit break individually independently ) 
+
+inclusion exclusion principle
+
+if  i compute all multiples of a number it takes nlog(n) time 
+
