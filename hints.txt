@@ -67,6 +67,8 @@ in dp problem or ay other problem always see the boundary condtion can be positi
 dp finaal state (helpfull for multi dimentional dp) , from middle (grid dp) ,from beginning (help full for array 2 d dp);
 use arrangement of l,R to solve number of waysto rech a partical position ;
 and if 1->k steps are possible then use bottom up dp(it iterative dp)
+break from a part and solve it independently then  combine them (f(i,j)=f(i,k)+f(k+1,j)+some combining term ) in dp;
+
 
 
 
