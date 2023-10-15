@@ -57,3 +57,8 @@ inclusion exclusion principle
 
 if  i compute all multiples of a number it takes nlog(n) time 
 
+form aljebric equation in the then analyse the problem if bit doesnot work 
+
+(E. Data Structures) Fan nice concept to be known 
+
+use boundary condition like putting x =1 div 2  1st problem 
