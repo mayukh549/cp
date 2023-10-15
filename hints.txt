@@ -51,6 +51,7 @@ minimum maximum taking out trick in query question break the entire array in paw
 when ever taking remainder if ithas some increment thing carefully (eg C. Jellyfish and Green Apple);
 
 deriving the final answer from the question (bit break individually independently ) 
+dp[x][y]=min(dp[x][k]+dp[k+1][y])+ar[x]*ar[k+1]*ar[y+1]; k for all x-->y+1
 
 inclusion exclusion principle
 
