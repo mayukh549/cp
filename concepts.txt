@@ -1,0 +1,2 @@
+dp with bitmasking --->dp(i,available) = val[i,j]+dp(j,available^j);
+first assign all the (1111111) then zor it to remove the choosen one;
