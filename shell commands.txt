@@ -1,0 +1,2 @@
+g++ my_program.cpp -o my_program
+./my_program < input.txt > output.txt
