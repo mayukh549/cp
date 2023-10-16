@@ -2,8 +2,19 @@ g++ my_program.cpp -o my_program
 ./my_program < input.txt > output.txt
 
 
+
+
 # Compile the C++ program
 g++ -o my_program my_program.cpp
 
 # Run the C++ program and redirect its output to input.txt
 ./my_program > input.txt
+
+
+
+
+python compare_files.py file1.txt file2.txt
+
+
+
+cp your_cpp_file.cpp your_text_file.txt
