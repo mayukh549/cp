@@ -71,6 +71,8 @@ break from a part and solve it independently then  combine them (f(i,j)=f(i,k)+f
 
  try brute force untill a certain point approach (see from where th etherms are repeating)
 
+when breaking a number and adding it in 2 parts check all the parts of the number (mistake in B. Milena and Admirer)
+
 
 
 
