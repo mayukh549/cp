@@ -73,6 +73,9 @@ break from a part and solve it independently then  combine them (f(i,j)=f(i,k)+f
 
 when breaking a number in array  and adding it in 2 parts in the array check all the parts of the number (mistake in B. Milena and Admirer)
 
+range question always when inside a raneg it sgould be in the 2 parts (eg D. Jumping Through Segments)
+
+
 
 
 
