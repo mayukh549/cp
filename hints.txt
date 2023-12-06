@@ -76,6 +76,8 @@ when breaking a number in array  and adding it in 2 parts in the array check all
 range question always when inside a raneg it sgould be in the 2 parts (eg D. Jumping Through Segments)
 
 
+ sum of digits if same the  (range is btwn 0 9) so no carry possible 
+
 
 
 
