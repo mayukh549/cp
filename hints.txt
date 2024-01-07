@@ -83,7 +83,8 @@ sob array increas decs inc decs ... or dec indc decs inc -- ei format ei thake
 
 ar akta logic greedy store kore kore jachii position(containing power, strength,ability etc) bt dorkar holei use korchi-->course
 othoba array k split korchi tarpor exchange something to get best possible ans -->course
- 
+minimum bar korar jonno sorting is not the best possible always eg pinlley round 3 question 2
+
 
 
 
