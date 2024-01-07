@@ -77,6 +77,8 @@ range question always when inside a raneg it sgould be in the 2 parts (eg D. Jum
 
 
  sum of digits if same the  (range is btwn 0 9) so no carry possible 
+in greedy future ebong past e ki hochhe (---->choto element aste pare(---->tahole present ar future er modhhe sob element boro othoba equal hobe<-----) boro element aste pare othoba equal element aste pare ar <--------)if the present ta k fixed kore bhab if future godogol hochhe tahole change logic if not keep it -->breakin array removing elements from array splitting array mane kichu akta operation kore array ta k chobto boro change 
+
 
 
 
