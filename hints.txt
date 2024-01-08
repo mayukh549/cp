@@ -84,6 +84,9 @@ sob array increas decs inc decs ... or dec indc decs inc -- ei format ei thake
 ar akta logic greedy store kore kore jachii position(containing power, strength,ability etc) bt dorkar holei use korchi-->course
 othoba array k split korchi tarpor exchange something to get best possible ans -->course
 minimum bar korar jonno sorting is not the best possible always eg pinlley round 3 question 2
+what does the question operation in the greedy question actually want to say do not think about how it is written find the inner simple meaning 
+take the ans as x then find the mathematical expression example pinley round 3  q 4
+
 
 
 
