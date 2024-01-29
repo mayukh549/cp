@@ -89,7 +89,7 @@ take the ans as x then find the mathematical expression example pinley round 3  
 
 dekhaniei 2 difference er khela hochhe sekhanei even odd concept lagbe example (matching numbers ,code chef c problem date 17/1/23 )  
 geedy te sob somoe du diktheke bhabbi 1 dik ami jete jet dhokabo 2nd ami dukie nie jete jete bar korbo othobo ami bangbo duto part e 
-ar array alphabet er question hole abar korbo tarbo b tarpor c tarpor d othoba ulto z tarpor y tarpor xx .......
+ar array alphabet er question hole abar korbo tarbo b tarpor c tarpor d othoba ulto z tarpor y tarpor xx .......( Potions (Hard Version),)
 
 
 
