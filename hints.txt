@@ -92,6 +92,10 @@ geedy te sob somoe du diktheke bhabbi 1 dik ami jete jet dhokabo 2nd ami dukie n
 ar array alphabet er question hole abar korbo tarbo b tarpor c tarpor d othoba ulto z tarpor y tarpor xx .......( Potions (Hard Version),)
 
 
+in the math questiosn always give a thought on taking consecutive lcms and then moving forward or taking consecutive gcd and moc=ving forward or taking gcd or lcm of differences and then moving forward 
+
+
+
 
 
 
