@@ -95,6 +95,10 @@ ar array alphabet er question hole abar korbo tarbo b tarpor c tarpor d othoba u
 in the math questiosn always give a thought on taking consecutive lcms and then moving forward or taking consecutive gcd and moc=ving forward or taking gcd or lcm of differences and then moving forward 
 
 find the ans or find the contribution of each element in the ans (C. Sequence Pair Weight)
+distinct ans are only possible 
+break expression into functions and find the best possible value of earch part thr draw a inequality between the part to connect the funtion example 
+think precomutaton and use a nearest known property and try to modify the opration given in question using aljebra  
+
 
 
 
