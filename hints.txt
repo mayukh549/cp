@@ -99,6 +99,8 @@ distinct ans are only possible
 break expression into functions and find the best possible value of earch part thr draw a inequality between the part to connect the funtion example 
 think precomutaton and use a nearest known property and try to modify the opration given in question using aljebra  
 
+a leaf node always has one edge so if multiple connnected components have remove all the n-1 connected parts
+
 
 
 
